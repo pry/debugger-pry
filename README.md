@@ -1,4 +1,6 @@
-This gem adds a "pry" command to debugger.
+# debugger-pry
+
+This gem adds a `pry` command to the [debugger](https://github.com/cldwalker/debugger) gem.
 
 To see it in action, run `ruby examples/foo.rb` and type "pry" at the debug prompt.
 
