@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "debugger-pry"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew O'Brien", "John Mair"]
   s.email       = ["obrien.andrew@gmail.com", "jrmair@gmail.com"]
