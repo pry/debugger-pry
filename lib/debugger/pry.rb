@@ -1,5 +1,5 @@
 require 'pry'
-require 'ruby-debug'
+require 'debugger'
 
 module Debugger
   class PryCommand < Command
@@ -8,16 +8,16 @@ module Debugger
         (?:\s+(-d))?
         \s*$/x
     end
-    
+
     def execute
       unless @state.interface.kind_of?(LocalInterface)
         print "Command is available only in local mode.\n"
         throw :debug_error
       end
-      
+
       get_binding.pry
     end
-    
+
     class << self
       def help_command
         'pry'
@@ -25,10 +25,10 @@ module Debugger
 
       def help(cmd)
         %{
-          pry\tstarts an Pry session.
+          pry\tstarts a Pry session.
         }
       end
     end
-    
+
   end
 end
