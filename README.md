@@ -1,6 +1,7 @@
 # debugger-pry
 
-This gem adds a `pry` command to the [debugger](https://github.com/cldwalker/debugger) gem.
+This gem adds a `pry` command to the [debugger](https://github.com/cldwalker/debugger) gem enabling you to bring up
+a pry console during your session. It is similar to debugger's built-in `irb` command.
 
 To see it in action, run `ruby examples/foo.rb` and type "pry" at the debug prompt.
 
